@@ -50,4 +50,4 @@ streamlit run app.py
 
 ## 👨‍💻 Autor
 **Anderson Capelini Andrade** Estudante de Ciência de Dados - FATEC Cotia (Previsão: 2027)  
-[Conecte-se no LinkedIn](www.linkedin.com/in/anderson-capelini)
+[www.linkedin.com/in/anderson-capelini](www.linkedin.com/in/anderson-capelini)
