@@ -1,0 +1,16 @@
+/* Ajuste de Topo para remover espaço em branco excessivo */
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Forçar a cor correta (Borgonha) nas equações LaTeX (TIS) */
+.katex-html {
+    color: #4E0707 !important; 
+    font-weight: bold;
+}
+
+/* Padronização da linha divisória */
+hr {
+    border-top: 1px solid #E0D8C3 !important;
+}

@@ -1,0 +1,36 @@
+{
+  "insider_threat": [
+    {
+      "dia": "Estado Inicial (Dia 0)",
+      "evento": "Monitoramento de rotina. Tráfego dentro da normalidade.",
+      "sinal": "Nenhuma anomalia detectada.",
+      "pesos_sugeridos": {"alpha": 0.25, "beta": 0.25, "gamma": 0.25, "delta": 0.25},
+      "sensores": {"ax": 0.05, "be": 0.02, "ts": 0.01, "ur": 0.03},
+      "desc_tecnica": "O sistema opera com o Prior Bayesiano em nível base. Módulo UEBA estável."
+    },
+    {
+      "dia": "Dia 1: O Sinal Fraco",
+      "evento": "Execução de queries volumosas fora do padrão.",
+      "sinal": "Variação na telemetria db_latency_jitter_ms (+8ms vs histórico).",
+      "pesos_sugeridos": {"alpha": 0.25, "beta": 0.25, "gamma": 0.25, "delta": 0.25},
+      "sensores": {"ax": 0.71, "be": 0.15, "ts": 0.10, "ur": 0.12},
+      "desc_tecnica": "A Isolation Forest acusa uma anomalia isolada (A(x) = 0.71). Como é um sinal fraco e isolado, regras estáticas de SIEM ignorariam. O Sentinela apenas retém a informação."
+    },
+    {
+      "dia": "Dia 3: A Quebra de Padrão",
+      "evento": "Acesso lógico a ativos de informação críticos.",
+      "sinal": "Autenticação realizada em servidor sem requisições nos últimos 90 dias úteis.",
+      "pesos_sugeridos": {"alpha": 0.25, "beta": 0.25, "gamma": 0.25, "delta": 0.25},
+      "sensores": {"ax": 0.20, "be": 0.35, "ts": 0.20, "ur": 0.75},
+      "desc_tecnica": "O Módulo UEBA detecta o desvio de comportamento persistente (U(r) = 0.75). Esse ajuste altera o Prior da Rede Bayesiana silenciosamente."
+    },
+    {
+      "dia": "Dia 5: O Bote (Exfiltração)",
+      "evento": "Upload fracionado e lento de dados em nuvem.",
+      "sinal": "Feature 'login_hour_anomaly' ativada. Transição de Kill Chain confirmada.",
+      "pesos_sugeridos": {"alpha": 0.25, "beta": 0.25, "gamma": 0.25, "delta": 0.25},
+      "sensores": {"ax": 0.45, "be": 0.61, "ts": 0.86, "ur": 0.85},
+      "desc_tecnica": "O Hidden Markov Model avalia o encadeamento acumulado via algoritmo de Viterbi (T(s) = 0.86). O TIS cruza a barreira crítica e executa o congelamento automático das credenciais."
+    }
+  ]
+}
