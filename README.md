@@ -28,26 +28,6 @@ Traduzir um modelo conceitual acadêmico em uma prova de conceito funcional. O s
 
 ---
 
-## ⚙️ Como Executar Localmente
-
-**1. Clone o repositório:**
-git clone https://github.com/SEU_USUARIO/sentinela-oculto.git
-
-**2. Acesse a pasta do projeto:**
-cd sentinela-oculto
-
-**3. Crie e ative um ambiente virtual (Conda recomendado):**
-conda create -n sentinela python=3.10 -y
-conda activate sentinela
-
-**4. Instale as dependências:**
-pip install -r requirements.txt
-
-**5. Execute a aplicação:**
-streamlit run app.py
-
----
-
 ## 👨‍💻 Autor
-**Anderson Capelini Andrade** Estudante de Ciência de Dados - FATEC Cotia (Previsão: 2027)  
-[www.linkedin.com/in/anderson-capelini](www.linkedin.com/in/anderson-capelini)
+**Anderson Capelini Andrade** - Estudante de Ciência de Dados - FATEC Cotia (Previsão: 2027)  
+[Conecte-se no LinkedIn](https://www.linkedin.com/in/anderson-capelini)
